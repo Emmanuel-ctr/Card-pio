@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Loja do Açaí</title>
+
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <link rel="stylesheet" href="estilos/estilosformulario.css">
+    <link rel='shortcut icon' href='imagens/favicon.ico'>
+</head>
+
+<body>
+    <div id="geral">
+        <header id="cabecalho">
+            <div id="logo">
+                <a href="index.html">
+                    <img src="imagens/açaí e cia.png" alt="Logo da Loja do Açaí">
+                </a>
+            </div>
+
+            <nav id="menu">
+                <a href="index.html">HOME</a>
+                <a href="cardapio.html">CARDÁPIO</a>
+                <a href="cadastro.html">CADASTRO</a>
+                <a href="contato.html">CONTATO</a>
+                <a href="sobre.html">SOBRE</a>
+            </nav>
+        </header>
+
+        <main id="conteudo">
+            <section id="formulario-cadastro">
+                <h1>Cadastro de Novo Usuário</h1>
+                <form action="processa_cadastro.php" method="post">
+                    <div class="campo">
+                        <label for="nome">Nome Completo:</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="senha">Senha:</label>
+                        <input type="password" id="senha" name="senha" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="confirmar-senha">Confirmar Senha:</label>
+                        <input type="password" id="confirmar-senha" name="confirmar-senha" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" id="telefone" name="telefone">
+                    </div>
+
+                    <div class="campo">
+                        <button type="submit">Cadastrar</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+
+        <footer id="rodape">
+            <p>&copy; 2023 Todos os direitos reservados para Loja do Açaí</p>
+            <p>CNPJ: 00.008.111/1XXXX-00 - Rua Exemplo, s/n, Aracaju, SE, 49066-321 - Tel.: 079 9101-1121</p>
+        </footer>
+    </div>
+</body>
+
+</html>

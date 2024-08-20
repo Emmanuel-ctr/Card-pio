@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio - Loja do Açaí</title>
+
+    <script src="js/scripts.js" defer></script>
+
+    <link rel="shortcut icon" href="imagens/favicon.ico">
+
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <link rel="stylesheet" href="estilos/estiloscardapio.css">
+</head>
+
+<body>
+    <div id="geral">
+        <header id="cabecalho">
+            <div id="logo">
+                <a href="index.html">
+                    <img src="imagens/açaí e cia.png" alt="Logo da Loja do Açaí">
+                </a>
+            </div>
+
+            <nav id="menu">
+                <a href="index.html">HOME</a>
+                <a href="cardapio.html">CARDÁPIO</a>
+                <a href="cadastro.html">CADASTRO</a>
+                <a href="contato.html">CONTATO</a>
+                <a href="sobre.html">SOBRE</a>
+            </nav>
+        </header>
+
+        <main id="conteudo">
+            <div id="cardapio">
+                <article class="card">
+                    <div class="imgCard">
+                        <img src="imagens/litro de acai.jpg" alt="Açaí Bowl com frutas e granola">
+                    </div>
+                    <div class="descricao">1 litro de Açaí</div>
+                    <div class="detalhe">1 litro de Açaí saboroso</div>
+                    <div class="valor">R$ 18,00</div>
+                    <div class="btnAdd">
+                        <button class="add" aria-label="Adicionar Açaí Bowl ao carrinho">Adicionar</button>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="imgCard">
+                        <img src="imagens/acai_premium.jpg" alt="Açaí Premium com frutas e toppings adicionais">
+                    </div>
+                    <div class="descricao">Açaí Premium</div>
+                    <div class="detalhe">Açaí, banana, kiwi, granola, mel e castanhas</div>
+                    <div class="valor">R$ 22,00</div>
+                    <div class="btnAdd">
+                        <button class="add" aria-label="Adicionar Açaí Premium ao carrinho">Adicionar</button>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="imgCard">
+                        <img src="imagens/acai_clasico.jpg" alt="Açaí Clássico com frutas frescas">
+                    </div>
+                    <div class="descricao">Açaí Clássico</div>
+                    <div class="detalhe">Açaí, banana, morango</div>
+                    <div class="valor">R$ 15,00</div>
+                    <div class="btnAdd">
+                        <button class="add" aria-label="Adicionar Açaí Clássico ao carrinho">Adicionar</button>
+                    </div>
+                </article>
+            </div>
+
+            <aside id="sacola">
+                <div id="btnSacola">
+                    <div id="total">
+                        <div>Total R$</div>
+                        <div id="vlrTotal">55,00</div>
+                    </div>
+                </div>
+
+                <div id="itens">
+                    <div class="item">
+                        <div class="descSacola">Açaí Bowl</div>
+                        <div class="quantidade">1</div>
+                        <div class="vlrSacola">R$ 18,00</div>
+                        <div class="totItem vlrSacola">R$ 18,00</div>
+                        <div class="btnRemover">
+                            <img src="imagens/remover.png" alt="Remover Item do carrinho" title="Remover Item">
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </main>
+
+        <footer id="rodape">
+            <p>&copy; 2023 Todos os direitos reservados para Loja do Açaí</p>
+            <p>CNPJ: 00.008.111/1XXXX-00 - Rua Exemplo, s/n, Aracaju, SE, 49066-321 - Tel.: 079 9101-1121</p>
+        </footer>
+    </div>
+</body>
+
+</html>
